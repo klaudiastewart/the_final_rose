@@ -1,5 +1,5 @@
 <% @contestants.each do |contestant| %>
-  <%= contestant.name %>,
+  <%= link_to "#{contestant.name}", "/bachelorettes/#{@bachelorette.id}/contestants/#{contestant.id}" %>,
   <%= contestant.age %>,
   <%= contestant.hometown %>
 <% end %>
