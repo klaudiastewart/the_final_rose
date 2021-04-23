@@ -1,0 +1,5 @@
+<%= @contestant.name %>
+<%= @bachelorette.season_number %>
+<% @contestant_outings.each do |outing| %>
+  <%= link_to "#{outing.name}", "/bachelorettes/#{@bachelorette.id}/contestants/#{@contestant.id}/outings/#{outing.id}" %>
+<% end %>
