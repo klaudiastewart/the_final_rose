@@ -20,4 +20,9 @@ RSpec.describe "Bachelorette Show Page" do
     expect(page).to have_content(@contestant1.name)
     expect(page).to have_content(@contestant2.name)
   end
+
+  it 'shows the average age of the ontestants' do
+    expect(page).to have_content(@bachelorette.contestants_average_age)
+    expect(page).to have_content(28.5)
+  end
 end
